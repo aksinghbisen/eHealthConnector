@@ -5,7 +5,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class MainApp extends Application {
 
     @Override
@@ -34,6 +36,8 @@ public class MainApp extends Application {
     }
 
     public static void main(String[] args) {
+        System.out.println("app started");
+        log.info("app started");
         launch(args);
     }
 }
