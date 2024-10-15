@@ -71,6 +71,20 @@
                     <mainClass>org.mycarenet.MainApp</mainClass>
                 </configuration>
             </plugin>
+
+            <!-- Add this plugin for generating the manifest with Main-Class -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.mycarenet.MainApp</mainClass> <!-- Your main class -->
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
