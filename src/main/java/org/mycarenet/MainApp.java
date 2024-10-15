@@ -16,6 +16,7 @@ public class MainApp extends Application {
         EHealthApiInvoker serviceInvoker = new EHealthApiInvoker();
 
         // Button to create session
+        
         Button createSessionButton = new Button("Create Session");
         createSessionButton.setOnAction(e -> sessionHandler.setupSession());
 
